@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, Pressable } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 const ContactListItem = (props) => {
   return (
-    <View style={styles.container}>
+    <Pressable style={styles.container} onPress={props.onPress}>
       <View style={styles.left}>
         <Image source={require('../components/img/img1.jpg')}
           style={styles.img} />
@@ -19,7 +19,7 @@ const ContactListItem = (props) => {
         <Icon name="star-o" size={25} color="white" style={{marginRight: 20}}/>
         <Icon name="phone" size={25} color="white"/>
       </View>
-    </View>
+    </Pressable>
   )
 }
 
