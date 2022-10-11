@@ -114,7 +114,7 @@ const Register = () => {
         confirmPassword: '',
       }}
       validationSchema={registerValidationSchema}
-      onSubmit = { () => Alert.alert("Finally, your password is comfrimed, IDIOT!")}
+      onSubmit={() => Alert.alert("Finally, your password is comfrimed, IDIOT!")}
     >
 
       {({
@@ -208,6 +208,7 @@ const styles = StyleSheet.create({
     fontSize: 26,
     fontWeight: '600',
     marginBottom: 15,
+    textAlign: 'center',
   },
 
   inputWrapper: {
