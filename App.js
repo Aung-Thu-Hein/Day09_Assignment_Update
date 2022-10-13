@@ -9,8 +9,9 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Home from '../AungThuHein_Day09Assignment_6-10-2022/components/Home';
 import Favourite from '../AungThuHein_Day09Assignment_6-10-2022/components/Favourite';
 import Register from '../AungThuHein_Day09Assignment_6-10-2022/components/Register';
+import Api from './components/apiFlatList';
 
-const BSE = () => <Text> BSE </Text>
+const ApiList = () => <Api/>
 const Reg = () => <Register/>
 
 const Manager = ({ navigation }) => {
@@ -48,7 +49,7 @@ const TabBar = () => {
     initialRouteName="All">
     <Tab.Screen name="All" component={StackScreen}></Tab.Screen>
     <Tab.Screen name="Manager" component={Manager}></Tab.Screen>
-    <Tab.Screen name="BSE" component={BSE}></Tab.Screen>
+    <Tab.Screen name="ApiList" component={ApiList}></Tab.Screen>
     <Tab.Screen name="Register" component={Reg}></Tab.Screen>
   </Tab.Navigator>
   )
